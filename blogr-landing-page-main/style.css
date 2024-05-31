@@ -1,0 +1,261 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-image: url(/blogr-landing-page-main/images/bg-pattern-intro-desktop.svg);
+  background-color: hsl(356, 100%, 66%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 70vh;
+  padding: 30px;
+  border-bottom-left-radius: 60px;
+  margin-bottom: 30px;
+}
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -130px;
+  gap: 300px;
+  font-family: "Ubuntu", sans-serif;
+}
+.left {
+  display: flex;
+  color: white;
+  align-items: baseline;
+  justify-content: center;
+  gap: 30px;
+}
+.dropdown {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: x-small;
+}
+.dropdown-btw {
+  background-color: none;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+/* .dropdown-btn::after {
+  content: '\25BC'; Unicode for down arrow
+  font-size: 12px;
+  margin-left: 5px;
+} */
+.hover1:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.hover2:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.hover3:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.login {
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  font-size: x-small;
+}
+.sign-up {
+  display: flex;
+  align-items: center;
+  color: hsl(356, 100%, 66%);
+  padding: 8px;
+  border-radius: 20px;
+  background-color: white;
+}
+.mordern {
+  display: flex;
+  color: white;
+  font-size: xx-large;
+  margin-top: 20px;
+  margin-bottom: -50px;
+  font-family: "Overpass", sans-serif;
+}
+.audience {
+  display: flex;
+  font-size: smaller;
+  color: white;
+  font-family: "Overpass", sans-serif;
+}
+.two-buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-around;
+  margin-top: -40px;
+  font-family: "Ubuntu", sans-serif;
+}
+#one {
+  width: 100px;
+  color: hsl(356, 100%, 66%);
+  border-radius: 20px;
+  border: none;
+  padding: 5px;
+}
+#two {
+  width: 90px;
+  color: white;
+  border: 2px solid white;
+  background-color: hsl(353, 100%, 62%);
+  border-radius: 20px;
+  padding: 5px;
+}
+.first {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: stretch;
+  margin-top: -40px;
+  margin-bottom: 40px;
+}
+.first-text {
+  padding-left: 90px;
+  padding-right: 40px;
+  margin-top: 70px;
+}
+
+.image-container {
+  width: 100%;
+  overflow: hidden;
+  /* background-color: rebeccapurple; */
+}
+
+.image {
+  width: 100%;
+  /* max-width: 100%; */
+  height: 100%;
+  object-fit: fill;
+  object-position: 10%, 10%;
+  transform: translateX(10%);
+}
+h2 {
+  margin-top: 70px;
+  margin-left: -70px;
+  margin-bottom: -20px;
+  color: hsl(237, 17%, 21%);
+  font-family: "Overpass", sans-serif;
+}
+p {
+  font-size: xx-small;
+  line-height: 15px;
+  color: hsl(237, 17%, 21%);
+  font-family: "Overpass", sans-serif;
+}
+.up {
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+h4 {
+  padding-bottom: 20px;
+  color: hsl(237, 17%, 21%);
+  font-family: "Overpass", sans-serif;
+}
+.second {
+  /* background: url(./images/bg-pattern-circles.svg); */
+  background: linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+  height: 250px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Overpass", sans-serif;
+  margin-bottom: 100px;
+  border-bottom-left-radius: 60px;
+  border-top-right-radius: 60px;
+}
+.second-picture {
+  margin-top: -80px;
+  padding-left: 50px;
+  width: 450px;
+}
+span {
+  font-size: x-small;
+  color: white;
+}
+.side-text{
+  padding-left: 30px;
+}
+h3 {
+  color: white;
+
+  margin-top: -70px;
+  padding-bottom: 15px;
+}
+.third {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: stretch;
+  margin-top: -40px;
+  margin-bottom: 40px;
+}
+.third-text {
+  padding: 0px 70px;
+  margin-top: 70px;
+}
+.third-up {
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+footer {
+  display: flex;
+  align-items: first center;
+  justify-content: space-evenly;
+  background-color: hsl(240, 10%, 16%);
+  border-top-right-radius: 60px;
+  height: 200px;
+  width: 100%;
+}
+.footer {
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  align-items: flex-start;
+  gap: 120px;
+  justify-content: space-evenly;
+  color: white;
+}
+.product,
+.feauture,
+.connect {
+  padding-bottom: 20px;
+}
+.pro,
+.feat,
+.con {
+  font-size: xx-small;
+  color: hsl(240, 2%, 79%);
+}
